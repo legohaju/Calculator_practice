@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "project.stn991662891.calculator"
+    namespace = "project.calculator"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "project.stn991662891.calculator"
+        applicationId = "project.calculator"
         minSdk = 34
         targetSdk = 34
         versionCode = 1
@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures{
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -44,4 +48,5 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
 }
